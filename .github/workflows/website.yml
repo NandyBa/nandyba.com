@@ -56,7 +56,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           script: |
-            cd actions-runner/_work/Nandyba.com/Nandyba.com
+            cd actions-runner/_work/NandyBa.com/NandyBa.com
             yarn build
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
