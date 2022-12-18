@@ -28,7 +28,7 @@ jobs:
     - run: yarn
     #- run: yarn test
     - run: yarn build
-  setup:
+  build:
     needs: test-build
     runs-on: self-hosted
 
@@ -47,18 +47,4 @@ jobs:
     - run: yarn
     #- run: yarn test
     - run: yarn build
-
-  build:
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-      - name: executing remote ssh commands using password
-        uses: appleboy/ssh-action@master
-        with:
-          script: |
-            cd actions-runner/_work/NandyBa.com/NandyBa.com
-            yarn build
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
 
