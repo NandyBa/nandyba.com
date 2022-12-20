@@ -3,7 +3,7 @@ h1{
   text-align: center;
 }
 
-h2{
+.big-card h2{
   width: 100vw;
   text-align: center;
 }
@@ -15,3 +15,13 @@ h2 a{
 /* h2:hover{
   color: #646cff;
 } */
+
+.card{
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
