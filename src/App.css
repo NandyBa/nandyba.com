@@ -9,7 +9,7 @@ h2{
 }
 h2 a{
   color: rgb(175,184,193);
-  margin-right: 20px;
+  margin: 0 10px;
   cursor: pointer;
 }
 /* h2:hover{
