@@ -1,0 +1,16 @@
+@media screen and (min-width: 992px) {
+    .video{
+        width: 70%;
+        float: left;
+    }
+    .video-parts{
+        width: 30%;
+        float: left;
+        /* margin-top: 10%; */
+    }
+    
+}
+main{
+    clear: both;
+    width: 100%;
+}

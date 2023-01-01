@@ -1,10 +1,27 @@
-import Home from "./Home"
-import './App.css'
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './page/Home';
+import Formations from './page/Formations/Formations';
+import FormationLinkedIn from './page/Formations/LinkedIn';
+import './App.css';
 
-function App() {
-  return (
-    <Home/>
-  )
+const App = () => {
+
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route path="">
+          {/* <Route path=":lang">
+            <Route path="" element={<Home />}/>
+            <Route path="pre-registration" element={<PreRegistration/>} />
+          </Route> */}
+          <Route path="" element={<Home />}/>
+          <Route path="formations" element={<Formations />} />
+          <Route path="formations/LinkedIn" element={<FormationLinkedIn />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
