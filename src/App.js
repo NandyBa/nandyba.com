@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './page/Home';
 import Formations from './page/Formations/Formations';
 import FormationLinkedIn from './page/Formations/LinkedIn';
+import FormationGitHub from './page/Formations/GitHub';
 import './App.css';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="" element={<Home />}/>
           <Route path="formations" element={<Formations />} />
           <Route path="formations/LinkedIn" element={<FormationLinkedIn />} />
+          <Route path="formations/GitHub" element={<FormationGitHub />} />
         </Route>
       </Routes>
     </BrowserRouter>
