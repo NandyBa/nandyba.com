@@ -9,7 +9,7 @@ const GitHub = () => {
 
     return (
         <div>
-            <h1>Moved to <a hreh={url}>GitHub</a></h1>
+            <h1>Moved to <button onClick={url}>Perform action</button></h1>
         </div>
     )
 }
