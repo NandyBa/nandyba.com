@@ -19,7 +19,7 @@ const App = () => {
           <Route path="" element={<Home />}/>
           <Route path="formations" element={<Formations />} />
           <Route path="formations/LinkedIn" element={<FormationLinkedIn />} />
-          <Route path="formations/GitHub" element={<FormationGitHub />} />
+          <Route path="formations/GitHub/pdf" element={<FormationGitHub />} />
         </Route>
       </Routes>
     </BrowserRouter>
